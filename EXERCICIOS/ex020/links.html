@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINks</title>
+    <style>
+
+        body {
+            font: 1em arial;
+        }
+       a {
+    font-weight: bold;
+    text-decoration: nome;
+    color: red;
+}
+
+        a:visited { 
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before {
+            content:'>>';
+            font-weight: lighter;
+        }
+        .especial::after {
+            content:'<<';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank " class="especial" >Site curso em video</a></li>
+    </ul>
+</body>
+</html>
