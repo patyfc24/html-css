@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Teste</title>
+    <style> 
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: aqua;
+            color: aliceblue;
+        }
+      
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    .cnome {
+            background-color: blueviolet;
+        }
+    tr:nth-child(even) { /*efeit zebrado par*/
+        background-color: beige;
+    }
+    tr:nth-child(odd) { /*efeito zebrado impar */
+        background-color: rgb(206, 162, 247);
+    }
+    </style>
+</head>
+<body>
+    <h1>Isso e um Teste</h1>
+     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2">
+            <col class="cprof">
+            </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>joao</td>
+            <td>F</td>
+            <td>52</td>
+            <td>padeiro</td>
+        </tr>
+    </table>
+</body>
+</html>
