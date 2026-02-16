@@ -8,13 +8,14 @@
 <body>
     <h1>Teste de Formulário</h1>
 
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--AJUDA A EXIBIR COM NAVEGADOR A PALAVRA QUE PODE SER PARA AQUELA CAIXA  E CONFIGURAR PARA CA CAIXA O QUEW É-->
+
     <label for="iusu">Usuário:</label>
-    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="5" placeholder="nome de usuário">
+    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="5" placeholder="nome de usuário"><!--DICA QUE APARECE NA CAIXA DO QUE ESCREVER USER NAME -->
 
     <p>
         <label for="iesen">Senha</label>
-        <input type="password" name="Sen" id="iesen" required minlength="8">
+        <input type="password" name="Sen" id="iesen" required minlength="8" autocomplete="current-password"><!--PARA LOGIN-->
     </p>
     <p>
         <input type="submit" value="Enviar">
