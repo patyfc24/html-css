@@ -1,2 +1,9 @@
 @charset "UTF-8";
 /*todas as demais mídias */
+
+@media print {
+    
+}
+@media  and(max-width:  ) {
+    
+}
