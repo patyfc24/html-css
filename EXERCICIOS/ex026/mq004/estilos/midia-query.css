@@ -6,7 +6,7 @@
 }
 @media screen and(min-width: 768px )and (max-width: 992px){ /*tablete*/
     
-    background-image: url();
+    background-image: url(../);
 }
 @media screen and (min-width: 768px) and (max-width: 992px) { /*desketop*/
     
