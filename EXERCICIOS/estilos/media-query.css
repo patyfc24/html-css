@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* TYPICAL DEVICE BREAKPOINTS
+TELAS DE CELULAR: 600PX ATÉ 768PX
+TELAS DE TABLETE :768PX ATÉ 992PX
+DESKETOP: 992PX ATÉ 1200PX
+GRANDE TELAS ACIMA DE 1200PX */
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+}
+menu > ul > li {
+    display: inline-block;
+}
+main {
+    width: 768px;
+}
