@@ -8,10 +8,7 @@
         div.container {
             background-color: aqua;
             display: flex;
-            flex-flow: row wrap;
-            align-self: flex-start;
-            
-            height: 400px;
+            flex-grow: row wrap;
         }
         div.item {
             background-color: green;
@@ -21,29 +18,25 @@
             
         }
         div#i1 {
-            
+            order: 0;
         }
         div#i2 {
-            
-        
-            
+            order: -2;
         }
         div#i3 {
-           
-            align-self:flex-ede
+            order: 4;
         }
-
         div#i4 {
-            
+            order: 8;
         }
         div#i5 {
-            align-self:center
-            
+            order: 2;
+        }
         div#i6 {
-        
+            order: 0;
         }
         div#i7 {
-            
+            order: -4;
         }
 
     </style>
