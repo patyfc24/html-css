@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: green;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+        div#caixaa {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#caixab {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#caixac {
+            flex-shrink: 4;
+            flex-grow: 1;
+        }
+
+/*Exemplo: Se dois itens têm flex-grow: 1, cada um recebe uma parte igual do espaço extra. Se um tem flex-grow: 2e o outro flex-grow: 1, o primeiro item ocupa dois terços do espaço extra e o segundo ocupa um terço*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item" id="caixaa">A</div>
+    <div class="item" id="caixab">B</div>
+    <div class="item" id="caixac">C</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Flex Grow Exemplo</title>
+
+<style>
+
+.container{
+    display:flex;
+    background-color: lightgray;
+}
+
+.item{
+    border:1px solid black;
+    text-align:center;
+    color:white;
+    font-size:20px;
+    flex-basis:200px; /* tamanho inicial */
+}
+
+/* caixa A cresce pouco */
+#a{
+    background-color:red;
+    flex-grow:1;
+}
+
+/* caixa B cresce médio */
+#b{
+    background-color:blue;
+    flex-grow:2;
+}
+
+/* caixa C cresce mais */
+#c{
+    background-color:green;
+    flex-grow:3;
+}
+.container2{
+    display:flex;
+    background-color:lightgray;
+    width:400px; /* container pequeno para forçar encolher */
+}
+
+.item2{
+    border:1px solid black;
+    text-align:center;
+    color:white;
+    font-size:20px;
+    flex-basis:200px; /* tamanho inicial */
+}
+
+/* encolhe pouco */
+#sa{
+    background-color:purple;
+    flex-shrink:1;
+}
+
+/* encolhe mais */
+#sb{
+    background-color:orange;
+    flex-shrink:2;
+}
+
+/* encolhe muito */
+#sc{
+    background-color:teal;
+    flex-shrink:3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="item" id="a">A</div>
+
+<div class="item" id="b">B</div>
+
+<div class="item" id="c">C</div>
+
+</div>
+<h2>Exemplo Flex Shrink</h2>
+
+<div class="container2">
+
+<div class="item2" id="sa">A</div>
+<div class="item2" id="sb">B</div>
+<div class="item2" id="sc">C</div>
+
+</div>
+</body>
+</html>
