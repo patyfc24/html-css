@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* remove margens padrão do navegador */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* facilita controle de tamanho */
+}
+
+/* configuração geral da página */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    width: 100%;        /* melhor que 100vw para evitar scroll lateral */
+    min-height: 100vh;  /* ocupa no mínimo a altura da tela */
+}
+
+/* espaçamento entre títulos e parágrafos */
+p, h1, h2 {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* espaçamento interno do header e da seção normal */
+header, section.normal {
+    padding: 20px;
+}
+
+/* container flex principal */
+section.flex-content {
+
+    background-color: rgba(216, 250, 216, 0.781);
+
+    padding: 20px;
+
+    display: flex;              /* ativa flexbox */
+    flex-flow: column nowrap;   /* artigos ficam um abaixo do outro */
+}
+
+/* apenas decoração para visualizar os blocos */
+section > article {
+    border: 2px dashed greenyellow;
+}
+
+/* artigo com TEXTO primeiro e depois MIDIA */
+article.texto-midia {
+    display: flex;        /* ativa flexbox dentro do article */
+    flex-flow: row wrap;  /* elementos lado a lado e quebram no mobile */
+    justify-content: space-between;
+        border: 2px dashed rgb(255, 47, 47);
+
+}
+
+/* artigo com MIDIA primeiro e depois TEXTO */
+article.midia-text {
+    display: flex;
+    flex-flow: row wrap-reverse; 
+    justify-content: space-between;
+    /* mesma coisa do anterior, mas invertendo a ordem */
+        border: 2px dashed rgb(47, 137, 255);
+
+}
+
+/* área do texto */
+article > .text {
+
+    flex: 1 1 500px; 
+    /* grow = 1 (pode crescer)
+       shrink = 1 (pode diminuir)
+       basis = 500px (tamanho base) */
+}
+
+/* área da mídia (imagem ou vídeo) */
+article > .midia {
+
+    flex: 1 0 500px; 
+    /* ocupa espaço ao lado do texto
+       e quebra para baixo quando a tela diminuir */
+}
+
+/* deixa imagem e vídeo responsivos */
+.midia img,
+.midia iframe {
+
+    width: 100%;   /* ocupa todo espaço do container */
+    height: auto;  /* mantém proporção */
+}
+.midia iframe{
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+    height: auto;
+}
+
+div.midia > img {
+    display: block;
+    margin: auto;
+}
+div.midia > iframe {
+    display: block;
+    margin: auto;
+width: 90%;
+}
